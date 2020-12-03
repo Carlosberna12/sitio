@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario valido</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>Usuario valido</h1>
+        <a href="/logout" class="btn btn-primary">Cerrar sesion</a>
+    </div>
+    <ul>
+        <li>id <%=user.uid%></li> 
+        <li>token <%=user.token%></li>
+        <li>email <%=user.email%></li>
+        <li>Nombre <%= user.name%></li>
+        <li>Genero <%= user.gender%></li>    
+        <li><img src="<%= user.pic%>" alt=""></li>
+    </ul>
+</body>
+</html>
